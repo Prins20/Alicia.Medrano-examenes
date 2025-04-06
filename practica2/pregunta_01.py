@@ -47,8 +47,9 @@ empleado2 = Empleado("Ana García", 25, 1200)
 nuevo_sueldo1 = empleado1.aumento_sueldo()
 nuevo_sueldo2 = empleado2.aumento_sueldo()
 
-print(f"El sueldo de {empleado1.solicitar_nombre()} después de aumentar es: {nuevo_sueldo1}")
-print(f"El sueldo de {empleado2.solicitar_nombre()} después de aumentar es: {nuevo_sueldo2}")
+print("El sueldo de {} después de aumentar es: {}".format(empleado1.solicitar_nombre(), nuevo_sueldo1))
+print("El sueldo de {} después de aumentar es: {}".format(empleado2.solicitar_nombre(), nuevo_sueldo2))
 
-print(empleado1.mensaje_edad(2030))
-print(empleado2.mensaje_edad(2030))
+print("En el año 2030, {} tendrá {} años.".format(empleado1.solicitar_nombre(), empleado1.mensaje_edad(2030)))
+print("En el año 2030, {} tendrá {} años.".format(empleado2.solicitar_nombre(), empleado2.mensaje_edad(2030)))
+
