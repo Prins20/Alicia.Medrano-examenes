@@ -9,7 +9,6 @@ uso de tus métodos creados."""
 
 
 class BilleteraElectronica:
-    # Constructor para inicializar los atributos
     def __init__(self, nombre, apellido, saldo_soles, saldo_dolares, tipo_cambio=3.5):
         self.nombre = nombre
         self.apellido = apellido
