@@ -19,13 +19,11 @@ class BilleteraElectronica:
         self.saldo_dolares = saldo_dolares
         self.tipo_cambio = tipo_cambio
 
-    # Método para mostrar los saldos de las dos cuentas
     def mostrar_saldos(self):
         print(f"Titular: {self.nombre} {self.apellido}")
         print(f"Saldo en Soles: {self.saldo_soles} soles")
         print(f"Saldo en Dólares: {self.saldo_dolares} USD")
 
-    # Método para transferir entre cuentas (de dólares a soles o viceversa)
     def transferir(self, monto, de_cuenta, a_cuenta):
         if de_cuenta == "soles" and a_cuenta == "dolares":
             if self.saldo_soles >= monto:
@@ -66,6 +64,10 @@ class BilleteraElectronica:
 
         self.mostrar_saldos()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ff1a8a03bc8acacd3b40918fa56ee0ecbdff02d
 billetera1 = BilleteraElectronica("Carlos", "Pérez", 5000, 1500)
 billetera2 = BilleteraElectronica("Ana", "García", 1000, 2000)
 billetera3 = BilleteraElectronica("Luis", "Martínez", 2000, 800)
